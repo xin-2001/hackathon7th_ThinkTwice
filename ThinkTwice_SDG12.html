@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8" />
+    <title>認識永續經營</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="https://i.imgur.com/xhxBwEM.png" />
+    <link href="hack_home/hack_home.css" rel="stylesheet" type="text/css">
+    <link href="hack_home/hack_game.css" rel="stylesheet" type="text/css">
+    <link href="hack_home/hack_photo.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header>
+      <nav>
+      
+      </nav>
+  </header>
+  <main>
+    <div class="side">
+        <p class="side_logo"><a href="#logo"><img src="https://i.imgur.com/xhxBwEM.png" width="100"></a></p>
+        <p class="side_about"><a href="#about"><img src="hack_home/slide_1.png" height="40"></a></p>
+        <p class="side_infor"><a href="#infor"><img src="hack_home/slide_2.png" height="40"></a></p>
+        
+        <p class="side_gc"><a href="#game_content"><img src="hack_home/slide_3.png" height="40"></a></p>
+        <p class="side_worker"><a href="#worker"><img src="hack_home/slide_4.png" height="40"></a></p>
+    </div>
+    <div class="mmin">
+        <div id="logo"><img src="hack_home/logo_web.png" id="logo_img"></div>
+        <div id="about">
+            <h2><img src="hack_home/about3.png" width="300"></h2>
+            <!--<img src="hack_home/about3.png" width="300">-->
+            <div class="ab_content">
+                <p>
+                促進綠色經濟，確保永續消費及生產模式，是現在需要注意的議題，隨著工業革命開啟至今，我們的生態環境也開始跟著改變。
+                <br>漸漸的，大自然也開始向我們抗議...
+                <br>塑膠為人類帶來更多的便利性，也對環境帶來更多影響。
+                <br>塑膠滲入土壤、流入海洋甚至是影響了食物鏈，造成生物的環境、健康受到破壞。
+                <br>大量的工廠排放二氧化碳，影響了天氣，更帶來了急遽的氣候。
+                <br>讓我們帶你一同了解該怎麼做到綠色經濟永續發展，以及友善我們的環境。
+                </p>
+            </div>
+        </div>
+        <div class="info_game">
+        <div id="infor">
+            <h2><img src="hack_home/information.png" width="300"></h2>
+            <img src="hack_home/info_game.png" width="80%">
+            
+        </div>
+        <div id="game">
+            <h2></h2>
+            <div class="game_bg">
+            <p class="black"></p>
+            <img src="hack_home/start.jpg" id="bg_start">
+            
+            <p class="start" onclick="start()">start</p>
+            <div class="info">
+            你是一間百貨公司的董事長，長年推廣綠色企業，連同本身旗下的產業也是做好綠色經濟。
+            在簽署合作方面上會推廣對方公司能朝向綠色企業發展。
+            在教育上，有許多學校邀請你對年輕的世代來一場有關何謂綠色企業的講座。
+            </div>
+            <p class="ok" onclick="ok()">OK<p>
+            <div class="set_name">
+                請輸入姓名:<br>
+                姓:<input type="text" name="user_first" class="user_st" maxlength="5" required><br>
+                名:<input type="text" name="user_last" class="user_nd" maxlength="12" required><br>
+                <div class="name_send" onclick="send()">送出</div>
+            </div>
+            <div class="say">
+                <p class="user_name">kk</p>
+                
+                <p class="txt"></p>
+                <img src="" class="table_img">
+                <p class="txt2"></p>
+                <div class="next" onclick="next()">next</div>
+                <div class="next2" onclick="again(2)">next</div>
+                <div class="next3" onclick="again(3)">next</div>
+            </div>
+            <div class="bg_next" onclick="next()">next</div>
+            <div class="bg_back" onclick="back()">back</div>
+            </div>
+            
+        
+        
+        </div>
+        </div>
+        <div id="game_content">
+            <h2><img src="hack_home/link.png" width="300"></h2>
+            <ul class="slides">
+              <input type="radio" id="control-1" name="control" checked>
+              <input type="radio" id="control-2" name="control">
+              <input type="radio" id="control-3" name="control">
+              <input type="radio" id="control-4" name="control">
+              <input type="radio" id="control-5" name="control">
+              <input type="radio" id="control-6" name="control">
+              
+              <!--  Left/Right Button  -->
+              <div class="navigator slide-1">
+                <label for="control-6">
+                  <i class="fas fa-chevron-left">←</i>
+                </label>
+                <label for="control-2">
+                  <i class="fas fa-chevron-right">→</i>
+                </label>
+              </div>
+              
+              <div class="navigator slide-2">
+                <label for="control-1">
+                  <i class="fas fa-chevron-left">←</i>
+                </label>
+                <label for="control-3">
+                  <i class="fas fa-chevron-right">→</i>
+                </label>
+              </div>
+              
+              <div class="navigator slide-3">
+                <label for="control-2">
+                  <i class="fas fa-chevron-left">←</i>
+                </label>
+                <label for="control-4">
+                  <i class="fas fa-chevron-right">→</i>
+                </label>
+              </div>
+              <div class="navigator slide-4">
+                <label for="control-3">
+                  <i class="fas fa-chevron-left">←</i>
+                </label>
+                <label for="control-5">
+                  <i class="fas fa-chevron-right">→</i>
+                </label>
+              </div>
+              <div class="navigator slide-5">
+                <label for="control-4">
+                  <i class="fas fa-chevron-left">←</i>
+                </label>
+                <label for="control-6">
+                  <i class="fas fa-chevron-right">→</i>
+                </label>
+              </div>
+              <div class="navigator slide-6">
+                <label for="control-5">
+                  <i class="fas fa-chevron-left">←</i>
+                </label>
+                <label for="control-1">
+                  <i class="fas fa-chevron-right">→</i>
+                </label>
+              </div>
+              <!--  /Left/Right Button  -->
+                          
+              <li class="slide"><div class="wrapper"><div class="typing-demo"><img src="hack_home/ph_t1.png" height="40"></div></div><a href="https://theme.coa.gov.tw/storyboard.php?type=c&web=C&id=409"><img src="hack_home/photo_1.png"></a></li>
+              
+              <li class="slide"><div class="wrapper"><div class="typing-demo"><img src="hack_home/ph_t2.png" height="40"></div></div><a href="https://www.foodnext.net/news/newstrack/paper/4975368436"><img src="hack_home/photo_2.png"></a></li>
+              
+              <li class="slide"><div class="wrapper"><div class="typing-demo"><img src="hack_home/ph_t3.png" height="40"></div></div><a href="https://www.natgeomedia.com/environment/article/content-10924.html"><img src="hack_home/photo_3.png"></a></li>
+              
+              <li class="slide"><div class="wrapper"><div class="typing-demo"><img src="hack_home/ph_t4.png" height="40"></div></div><a href="https://greenfactory.ftis.org.tw/Page?itemid=4&mid=25"><img src="hack_home/photo_4.png"></a></li>
+              
+              <li class="slide"><div class="wrapper"><div class="typing-demo"><img src="hack_home/ph_t5.png" height="40"></div></div><a href="https://www.thenewslens.com/article/111504"><img src="hack_home/photo_5.png"></a></li>
+              
+              <li class="slide"><div class="wrapper"><div class="typing-demo"><img src="hack_home/ph_t6.png" height="40"></div></div><a href="https://gogreener.today/lifestyle/9-easy-ways-to-live-more-environment-friendly/"><img src="hack_home/photo_6.png"></a></li>
+  
+              <div class="controls-visible">
+                <label for="control-1"></label>
+                <label for="control-2"></label>
+                <label for="control-3"></label>
+                <label for="control-4"></label>
+                <label for="control-5"></label>
+                <label for="control-6"></label>
+                
+              </div>
+            </ul>
+        </div>
+        
+        <div id="worker">
+            <div>
+            <h2><img src="hack_home/team_logo.png" width="130"><img src="hack_home/worker1.png" width="300"></h2>
+            <img src="hack_home/worker.png" width="100%">
+            </div>
+        </div>
+    </div>
+    <script src="hack_home/jquery.js"></script>
+    <script src="hack_home/hack_home.js"></script>
+    <script src="hack_home/hack_game.js"></script>
+    <script src="hack_home/hack_photo.js"></script>
+  </main>
+    
+    
+
+
+</body>
+</html>

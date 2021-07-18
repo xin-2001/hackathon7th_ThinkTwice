@@ -1,0 +1,163 @@
+@charset="UFT-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+@keyframes ab{
+    from {left:-50%;}
+    to {left:0%;}
+}
+
+div{
+	display: block;
+}
+body{
+    font-family: 'Noto Sans TC',新細明體;
+}
+.side{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 33%;
+    height: 100%;
+    border: 1px none black;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.75);
+    font-size: 20px;
+    padding-left: 20px;
+    
+}
+.side>p{
+    align-items: space-around;/**/
+}
+.side>p>a:link{
+    color: black;
+    text-decoration: none;
+}
+.side>p>a:visited{
+    color: black;
+}
+#about{
+    z-index: 1;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    background-image: url(https://3.bp.blogspot.com/-2qMxNSLxRwU/XOPXMu3opBI/AAAAAAABS6c/IiLX7ph57bEBMj_kayRN3_6JdSR53r1fgCLcBGAs/s400/flower_tanpopo_watage.png);
+    background: linear-gradient(to bottom,#cf8d2a,#DCA055);
+}
+#about>h2{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: start;
+    text-align: left;
+    /*animation: ab 3s ease 0s normal;*/
+}
+.info_game{
+    background: linear-gradient(to bottom,#DCA055,#A16B47);
+    
+}
+#infor>img{
+    position: relative;
+    top: 200px;
+    
+}
+#game{
+    z-index: 1;
+    position: relative;
+    top:0;
+    /*bottom: 20px;*/
+    font-family: 'Noto Sans TC',新細明體;
+}
+#game>h2{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    text-align: center;
+    align-content: start;
+    justify-content: center;
+}
+#game_content{
+    z-index: 1;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+      background: linear-gradient(to bottom,#A16B47,#71645E);
+}
+#game_content>h2{
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    text-align: center;
+    align-content: start;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 1px 0 #005AB5,0 2px 0 #0072E3,0 3px 0 #2894FF,0 4px 0 #66B3FF, 0 5px 0 #97CBFF;
+}
+.ab_content{
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 65%;
+    height: auto;
+    max-height: 300px;
+    border: 1px dashed blue;
+    border-radius: 20px;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgba(255,255,255,0.7);
+}
+.ab_content>p{
+    margin: 10px;
+}
+.mmin{
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(243, 221,196);
+}
+.mmin>div{
+    position: relative;
+    border: 1px none black;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
+    
+}
+#logo{
+    background-color: rgb(207,141,42);
+}
+#logo_img{
+    position: relative;
+    
+    height: 100vh
+}
+#worker{
+    position: absolute;
+    background-color: #AAA; 
+}
+#worker>div{
+    margin: 20px;
+    padding-bottom: 20px;
+    border: 10px dashed white;
+}
+#infor>h2{
+    z-index: 0;
+    position: absolute;
+    top:0;
+    left:0;
+    
+}
+#infor{
+    position: relative;
+    height: 50vh;
+    
+}
+
